@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Housing</title>
+
+</head>
+
+<body>
+
+    <div class="head">
+        <h2 class="head__text">Coffee Housing</h2>
+    </div>
+
+    <table class="table">
+
+        <th>Product/Add-Ons</th>
+        <th>Milk</th>
+        <th>Cream</th>
+        <th>Latte</th>
+
+        <tr>
+
+            <td>Espresso</td>
+            <td>60</td>
+            <td>75</td>
+            <td>100</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Capuccino</td>
+            <td>80</td>
+            <td>90</td>
+            <td>125</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Latte</td>
+            <td>100</td>
+            <td>125</td>
+            <td>150</td>
+
+        </tr>
+
+    </table>
+
+    <div class="sel">
+
+        <h4 class="sel__head">Select product</h4>
+
+        <p class="sel__esp">Espresso</p>
+        <input type="number" min="0" max="150" value="0" class="sel__esp--rng" id="esp" />
+
+        <p class="sel__cap">Capuccino</p>
+        <input type="number" min="0" max="150" value="0" class="sel__cap--rng" id="cap" />
+
+        <p class="sel__lat">Latte</p>
+        <input type="number" min="0" max="150" value="0" class="sel__lat--rng" id="lat" />
+
+    </div>
+
+    <div class="add">
+
+        <h4 class="add__head">Select Add-Ons</h4>
+
+        <p class="add__milk">Milk</p>
+        <input type="number" min="0" max="150" value="0" class="add__milk--rng" id="milk" />
+
+        <p class="add__crm">Cream</p>
+        <input type="number" min="0" max="150" value="0" class="add__crm--rng" id="crm" />
+
+        <p class="add__lat">Latte</p>
+        <input type="number" min="0" max="150" value="0" class="add__lat--rng1" id="lat1" />
+
+        <input type="submit" value="Order" onclick="disp()" />
+
+    </div>
+
+    <div class="bill" style="display : none">
+
+        <h2 class="bill__head">Bill</h2>
+        <div class="bill__det">
+            <h4 class="bill__det--pro">Product</h4>
+
+            <p class="bill__det--esp"></p>
+            <p class="bill__det--cap"></p>
+            <p class="bill__det--lat"></p>
+
+            <h4 class="bill__det--add">Add-Ons</h4>
+
+            <p class="bill__det--milk"></p>
+            <p class="bill__det--crm"></p>
+            <p class="bill__det--lat1"></p>
+
+        </div>
+
+        <div class="bill__amt">
+            <p class="bill__amt--tot" id="tot"></p>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+<script src="../src/js/script.js"></script>
+<script src="../src/js/count.js"></script>
+
+<script>
+    function disp() {
+        var i = document.querySelector(".bill")
+
+        if (i.style.display === 'none') {
+            i.style.display = "block"
+        } else {
+            var nul = null;
+        }
+
+        var j = document.querySelector('#esp')
+
+        if (j.value == null || j.value == 0) {
+            alert('Order Something...');
+        }
+    }
+</script>
+
+
+</html>
