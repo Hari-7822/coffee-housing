@@ -1,0 +1,51 @@
+@use 'colors/_func.scss' as c;
+@use 'components/_mixins' as mix;
+@use '_re.sass';
+@use '_num.scss';    
+
+body {
+    background : c.col(lighter);
+}
+
+.head__text {
+    @include mix.flex(column, center, center);
+    text-shadow : 1px 2px 12px #3eca07c2;
+}
+
+
+.sel {
+
+    @include mix.flex(column, center, center);
+
+    &__esp, &__cap, &__lat {
+        
+        @include mix.flex(row, flex-start, center);
+        // width : 100vw;
+        padding: 0rem 0rem 0rem 4.875rem;
+        
+        &--text, &--text, &--text{
+        
+            padding : 0px 10px 0px 0px;
+        
+        }
+
+    }
+}
+
+.add {
+
+    @extend .sel;
+
+    &__milk, &__crm, &__lat {
+
+        @extend .sel__esp, .sel__cap, .sel__lat;
+
+        &--text, &--text, &--text{
+
+            @extend .sel__esp--text, .sel__cap--text, .sel__lat--text;
+
+        }
+
+    }
+
+}

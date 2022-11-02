@@ -3,9 +3,15 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- linking bootstrap -->
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../src/css/index.css" />
+    <link rel="stylesheet" href="../src/css/table.css" />
 
     <title>Coffee Housing</title>
 
@@ -17,34 +23,34 @@
         <h2 class="head__text">Coffee Housing</h2>
     </div>
 
-    <table class="table">
+    <table class="table table-borderless table-responsive-xl">
 
-        <th>Product/Add-Ons</th>
-        <th>Milk</th>
-        <th>Cream</th>
-        <th>Latte</th>
+        <th class = "table-dark">Product👇/Add-Ons👉</th>
+        <th class = "table-dark table-active">Milk</th>
+        <th class = "table-dark table-active">Cream</th>
+        <th class = "table-dark table-active">Latte</th>
 
-        <tr>
+        <tr class = "table-danger">
 
-            <td>Espresso</td>
+            <td class = "table-dark table-active">Espresso</td>
             <td>60</td>
             <td>75</td>
             <td>100</td>
 
         </tr>
 
-        <tr>
+        <tr class = "table-primary">
 
-            <td>Capuccino</td>
+            <td class ="table-dark table-active">Capuccino</td>
             <td>80</td>
             <td>90</td>
             <td>125</td>
 
         </tr>
 
-        <tr>
+        <tr class = "table-warning">
 
-            <td>Latte</td>
+            <td class = "table-dark table-active">Latte</td>
             <td>100</td>
             <td>125</td>
             <td>150</td>
@@ -57,14 +63,31 @@
 
         <h4 class="sel__head">Select product</h4>
 
-        <p class="sel__esp">Espresso</p>
-        <input type="number" min="0" max="150" value="0" class="sel__esp--rng" id="esp" />
 
-        <p class="sel__cap">Capuccino</p>
-        <input type="number" min="0" max="150" value="0" class="sel__cap--rng" id="cap" />
+        <div class="sel__esp">
+        
+            <p class="sel__esp--text">Espresso</p>
+            <input type="number" min="0" max="150" value="0" class="sel__esp--rng" id="esp" />
+        
+        </div>
 
-        <p class="sel__lat">Latte</p>
-        <input type="number" min="0" max="150" value="0" class="sel__lat--rng" id="lat" />
+
+
+        <div class="sel__cap">
+        
+            <p class="sel__cap--text">Capuccino</p>
+            <input type="number" min="0" max="150" value="0" class="sel__cap--rng" id="cap" />
+        
+        </div>
+
+
+
+        <div class="sel__lat">
+        
+            <p class="sel__lat--text">Latte</p>
+            <input type="number" min="0" max="150" value="0" class="sel__lat--rng" id="lat" />
+        
+        </div>
 
     </div>
 
@@ -72,14 +95,26 @@
 
         <h4 class="add__head">Select Add-Ons</h4>
 
-        <p class="add__milk">Milk</p>
-        <input type="number" min="0" max="150" value="0" class="add__milk--rng" id="milk" />
+        <div class="add__milk">
+        
+            <p class="add__milk--text">Milk</p>
+            <input type="number" min="0" max="150" value="0" class="add__milk--rng" id="milk" />
+        
+        </div>
 
-        <p class="add__crm">Cream</p>
-        <input type="number" min="0" max="150" value="0" class="add__crm--rng" id="crm" />
+        <div class="add__crm">
+        
+            <p class="add__crm--text">Cream</p>
+            <input type="number" min="0" max="150" value="0" class="add__crm--rng" id="crm" />
+        
+        </div>
 
-        <p class="add__lat">Latte</p>
-        <input type="number" min="0" max="150" value="0" class="add__lat--rng1" id="lat1" />
+        <div class="add__lat">
+
+            <p class="add__lat--text">Latte</p>
+            <input type="number" min="0" max="150" value="0" class="add__lat--rng1" id="lat1" />
+        
+        </div>
 
         <input type="submit" value="Order" onclick="disp()" />
 

@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]:focus-visible {
+  outline: none;
+}
+
+body {
+  background: #ffffff;
+}
+
+.head__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 2px 12px rgba(62, 202, 7, 0.7607843137);
+}
+
+.sel, .add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sel__esp, .add__milk, .add__crm, .add__lat, .sel__cap, .sel__lat {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0rem 0rem 0rem 4.875rem;
+}
+.sel__esp--text, .add__milk--text, .add__crm--text, .add__lat--text, .sel__cap--text, .sel__lat--text {
+  padding: 0px 10px 0px 0px;
+}

@@ -1,0 +1,6 @@
+@use '_clr' as clr;
+
+
+@function col($clr){
+    @return map-get(clr.$color, $clr);
+}
