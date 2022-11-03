@@ -7,10 +7,28 @@ input::-webkit-outer-spin-button {
 }
 
 input[type="number"] {
+    
+    background : #ffffff00;
+    border-radius : 999rem;
+    height: 59px;
+    width : 59px;
+
+    text-align:center;
+
     -moz-appearance: textfield;
 
     &:focus-visible {
         outline : none
     }
+    
+}
+
+//buttons
+
+input[type = "button"] {
+
+    background :#ffffff00;
+    font-size : 30px;
+
 }
 

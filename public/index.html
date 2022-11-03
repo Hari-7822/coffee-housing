@@ -13,17 +13,18 @@
     <link rel="stylesheet" href="../src/css/index.css" />
     <link rel="stylesheet" href="../src/css/table.css" />
 
+    <link rel="icon" href="../dist/imgs/coffee-cup.svg" type="image/x-icon">
     <title>Coffee Housing</title>
 
 </head>
 
 <body>
 
-    <div class="head">
+    <div class="head container">
         <h2 class="head__text">Coffee Housing</h2>
     </div>
 
-    <table class="table table-borderless table-responsive-xl">
+    <table class="table container table-borderless table-responsive-xl">
 
         <th class = "table-dark">Product👇/Add-Ons👉</th>
         <th class = "table-dark table-active">Milk</th>
@@ -67,7 +68,10 @@
         <div class="sel__esp">
         
             <p class="sel__esp--text">Espresso</p>
+            
+            <input type="button" id = "add__esp" class = "sel__esp--addbtn" value="+" />
             <input type="number" min="0" max="150" value="0" class="sel__esp--rng" id="esp" />
+            <input type="button" id = "del__esp" class = "sel__esp--rembtn" value="-" />
         
         </div>
 
@@ -76,8 +80,11 @@
         <div class="sel__cap">
         
             <p class="sel__cap--text">Capuccino</p>
+
+            <input type = 'button' id = 'add__cap' class = 'sel__cap--addbtn' value = '+' />
             <input type="number" min="0" max="150" value="0" class="sel__cap--rng" id="cap" />
-        
+            <input type = 'button' id = 'del__cap' class = 'sel__cap--rembtn' value = '-' />
+
         </div>
 
 
@@ -85,8 +92,11 @@
         <div class="sel__lat">
         
             <p class="sel__lat--text">Latte</p>
+            
+            <input type = 'button' id = 'add__lat' class = 'sel__lat--addbtn' value = '+' />
             <input type="number" min="0" max="150" value="0" class="sel__lat--rng" id="lat" />
-        
+            <input type = 'button' id = 'del__lat' class = 'sel__lat--addbtn' value = '-' />
+
         </div>
 
     </div>
@@ -98,30 +108,39 @@
         <div class="add__milk">
         
             <p class="add__milk--text">Milk</p>
+
+            <input type = 'button' id = 'add__milk' class = 'add__mink--addbtn' value = '+' />
             <input type="number" min="0" max="150" value="0" class="add__milk--rng" id="milk" />
-        
+            <input type = 'button' id = 'del__milk' class = 'add__milk--redbtn' value = '-' />
+
         </div>
 
         <div class="add__crm">
         
             <p class="add__crm--text">Cream</p>
+
+            <input type = 'button' id = 'add__crm' class = 'add__crm--addbtn' value = '+' />
             <input type="number" min="0" max="150" value="0" class="add__crm--rng" id="crm" />
-        
+            <input type = 'button' id = 'del__crm' class = 'add__crm--redbtn' value = '-' />
+
         </div>
 
         <div class="add__lat">
 
             <p class="add__lat--text">Latte</p>
-            <input type="number" min="0" max="150" value="0" class="add__lat--rng1" id="lat1" />
-        
+
+            <input type = 'button' id = 'add__latte' class = 'sel__lat--addbtn' value = '+' />
+            <input type="number" min="0" max="150" value="0" class="add__lat--rng" id="lat1" />
+            <input type = 'button' id = 'del__latte' class = 'add__lat--rembtn' value = '-' />
+
         </div>
 
         <input type="submit" value="Order" onclick="disp()" />
 
     </div>
 
-    <div class="bill" style="display : none">
-
+    <div class="bill container" >
+    
         <h2 class="bill__head">Bill</h2>
         <div class="bill__det">
             <h4 class="bill__det--pro">Product</h4>
@@ -148,26 +167,11 @@
 
 </body>
 
-<script src="../src/js/script.js"></script>
-<script src="../src/js/count.js"></script>
+<script src = "../src/js/script.js"></script>
+<script src = "../src/js/empty.js"></script>
+<script src="../src/js/add.js"></script>
+<script src="../src/js/reduce.js"></script>
 
-<script>
-    function disp() {
-        var i = document.querySelector(".bill")
-
-        if (i.style.display === 'none') {
-            i.style.display = "block"
-        } else {
-            var nul = null;
-        }
-
-        var j = document.querySelector('#esp')
-
-        if (j.value == null || j.value == 0) {
-            alert('Order Something...');
-        }
-    }
-</script>
 
 
 </html>

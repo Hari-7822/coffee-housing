@@ -1,15 +1,19 @@
 @use 'colors/_func.scss' as c;
 @use 'components/_mixins' as mix;
 @use '_re.sass';
-@use '_num.scss';    
+@use '_input.scss';    
 
 body {
+
     background : c.col(lighter);
+
 }
 
 .head__text {
+
     @include mix.flex(column, center, center);
     text-shadow : 1px 2px 12px #3eca07c2;
+
 }
 
 
@@ -19,16 +23,16 @@ body {
 
     &__esp, &__cap, &__lat {
         
-        @include mix.flex(row, flex-start, center);
+        @include mix.flex(row, baseline, center);
         // width : 100vw;
-        padding: 0rem 0rem 0rem 4.875rem;
+        // padding: 0rem 0rem 0rem 4.875rem;
         
         &--text, &--text, &--text{
-        
+            
+            font-size: 16px;
             padding : 0px 10px 0px 0px;
         
-        }
-
+        }        
     }
 }
 
@@ -47,5 +51,12 @@ body {
         }
 
     }
+
+}
+
+
+.bill {
+
+    @include mix.flex(column, center, center);
 
 }

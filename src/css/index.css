@@ -13,10 +13,20 @@ input::-webkit-outer-spin-button {
 }
 
 input[type=number] {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 999rem;
+  height: 59px;
+  width: 59px;
+  text-align: center;
   -moz-appearance: textfield;
 }
 input[type=number]:focus-visible {
   outline: none;
+}
+
+input[type=button] {
+  background: rgba(255, 255, 255, 0);
+  font-size: 30px;
 }
 
 body {
@@ -40,10 +50,17 @@ body {
 .sel__esp, .add__milk, .add__crm, .add__lat, .sel__cap, .sel__lat {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: center;
-  padding: 0rem 0rem 0rem 4.875rem;
 }
 .sel__esp--text, .add__milk--text, .add__crm--text, .add__lat--text, .sel__cap--text, .sel__lat--text {
+  font-size: 16px;
   padding: 0px 10px 0px 0px;
+}
+
+.bill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
