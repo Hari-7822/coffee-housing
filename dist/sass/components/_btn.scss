@@ -1,0 +1,23 @@
+@use '_mixins' as mix;
+
+button {
+
+    @include mix.flex();
+
+    background: #ffffff00;
+    border-radius : 20px;
+
+    $btn : 35px;
+
+    text-align: center;
+
+    height: $btn;   
+    width : $btn;
+
+    font-size: 35px;
+
+    &:hover {
+        box-shadow : 12px 6px 6px greenyellow;
+    }
+
+}

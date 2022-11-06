@@ -1,3 +1,26 @@
+.table {
+  text-align: center;
+  height: 28vh;
+  width: 80%;
+  min-width: 36%;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  text-align: center;
+  height: 35px;
+  width: 35px;
+  font-size: 35px;
+}
+button:hover {
+  box-shadow: 12px 6px 6px greenyellow;
+}
+
 *,
 *::before,
 *::after {

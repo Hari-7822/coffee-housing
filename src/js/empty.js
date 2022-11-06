@@ -14,4 +14,3 @@ function disp() {
         i.style.display = 'none';
     }
 }
-
