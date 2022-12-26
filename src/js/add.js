@@ -13,9 +13,6 @@ var milk = document.querySelector('.add__milk--rng')
 var crm = document.querySelector('.add__crm--rng')
 var latte = document.querySelector('.add__lat--rng')
 
-var arr = [a, b, c, d, e, f, esp, cap, lat, milk, crm, latte]
-
-
 
 a.addEventListener('click', () => {
 
