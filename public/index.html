@@ -149,8 +149,32 @@
 
 </body>
 
-<script src = "../src/js/script.js"></script>
-<script src = "../src/js/empty.js"></script>
+<script>
+     function sum(sel) {
+
+        this;
+
+
+        var esp_val = parseInt(document.querySelector('.sel__esp--rng'));
+        var cap_val = parseInt(document.querySelector('.sel__cap--rng'));
+        var lat_val = parseInt(document.querySelector('.sel__lat--rng'));
+        var milk_val = parseInt(document.querySelector('.add__milk--rng'));
+        var crm_val = parseInt(document.querySelector('.add__crm--rng'));
+        var latte_val = parseInt(document.querySelector('.add__lat--rng'));
+        console.log(esp_val, cap_val, lat_val, milk_val, crm_val, latte_val);
+        
+        var tot = document.querySelector('#tot')
+
+        const total = (esp_val * 4) + (cap_val * 6) + (lat_val * 8) + (milk_val * 2) + (crm_val * 3) + (latte_val * 6)
+        
+        
+        tot.innerHTML = total
+        
+        
+        }
+        
+</script>
+<script src="../src/js/empty.js"></script>
 <script src="../src/js/add.js"></script>
 <script src="../src/js/reduce.js"></script>
 

@@ -2,7 +2,7 @@
 import {esp, cap, lat, milk, crm, latte} from './add';
 
 
-function sum() {
+export default function sum() {
 
 
 var esp_val = parseInt(esp.value);
